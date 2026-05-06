@@ -31,6 +31,7 @@ contradictions: [other-page-slug]
 ## Tag Taxonomy
 - security
 - threat-intel
+- crypto-security
 - crypto
 - north-korea
 - lazarus
@@ -39,6 +40,17 @@ contradictions: [other-page-slug]
 - defense
 - infosec
 - blockchain
+- crypto-isac
+- collective-defense
+- api
+- defi
+- protocol
+- exchange
+- wallet
+- nation-state
+- infiltration
+- siem
+- ioc
 
 Rule: every tag on a page must appear in this taxonomy. Add new tags here first.
 
