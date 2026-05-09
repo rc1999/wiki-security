@@ -4,7 +4,10 @@
 - Created: SCHEMA.md, index.md, log.md, README.md
 - Domain: Cybersecurity, threat intelligence, crypto security, nation-state attacks, and defensive security operations
 
-## [2026-05-06] ingest | Ripple DPRK Threat Intel | Added 7 pages from crypto.news article
+## [2026-05-10] add | bankrbot-heist | Morse code prompt injection: Grok + Bankrbot, $200K drained, NFT privilege escalation, deterministic gating lesson
+- Raw source: raw/articles/bankrbot-morse-code-heist.md (GBHackers/Cryptopolitan)
+- Concept implications: AI policing AI fails, encoding bypasses text filters, agent wallets need hard-coded gates
+- Cross-wiki: ai-agentic/concepts/prompt-injection.md covers AI-angle breakdown
 - Raw: raw/articles/ripple-dprk-threat-intel-sharing.md
 - Concept: concepts/crypto-isac-threat-sharing.md — Industry-wide intelligence sharing via Crypto ISAC API
 - Entities:

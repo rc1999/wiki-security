@@ -12,6 +12,7 @@ Last updated: 2026-05-06 | Total pages: 7
 
 ## Entities
 
+- [[bankrbot-heist]] — Morse code prompt injection against Grok + Bankrbot, $200K crypto drained on Base network (May 2026)
 - [[crypto-isac]] — The Crypto Information Sharing and Analysis Center — member-driven threat intel sharing organization
 - [[ripple]] — Cryptocurrency company that shared internal DPRK threat intelligence via Crypto ISAC
 - [[coinbase]] — Major crypto exchange, Crypto ISAC founding member and API co-developer
