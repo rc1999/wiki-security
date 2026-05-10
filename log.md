@@ -4,10 +4,11 @@
 - Created: SCHEMA.md, index.md, log.md, README.md
 - Domain: Cybersecurity, threat intelligence, crypto security, nation-state attacks, and defensive security operations
 
-## [2026-05-10] add | bankrbot-heist | Morse code prompt injection: Grok + Bankrbot, $200K drained, NFT privilege escalation, deterministic gating lesson
-- Raw source: raw/articles/bankrbot-morse-code-heist.md (GBHackers/Cryptopolitan)
-- Concept implications: AI policing AI fails, encoding bypasses text filters, agent wallets need hard-coded gates
-- Cross-wiki: ai-agentic/concepts/prompt-injection.md covers AI-angle breakdown
+## [2026-05-10] update | bankrbot-heist | Deep dive added: NFT permission escalation mechanics, auto-provisioning vulnerability, prior March 2025 exploit context, token-gated capability bypass
+- Detailed: Bankr Club Membership NFT as backend permission token, how it bypassed March 2025 Grok block
+- Added: Wallet auto-provisioning without consent (Privy-managed, no xAI admin)
+- Added: Cumulative exposure ($500K+) and second-attack context
+- Sources: GBHackers, Cryptopolitan, BeyondMachines, SlowMist, NeuralTrust, Startup Fortune
 - Raw: raw/articles/ripple-dprk-threat-intel-sharing.md
 - Concept: concepts/crypto-isac-threat-sharing.md — Industry-wide intelligence sharing via Crypto ISAC API
 - Entities:

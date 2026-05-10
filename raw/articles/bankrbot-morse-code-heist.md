@@ -1,8 +1,19 @@
 # Source: Bankrbot Morse Code Heist
 
-**URL:** https://gbhackers.com/hackers-use-morse-code-to-trick-grok-and-bankrbot/amp/
+**URLs:**
+- https://gbhackers.com/hackers-use-morse-code-to-trick-grok-and-bankrbot/amp/
+- https://beyondmachines.net/event_details/prompt-injection-attack-drains-155000-from-grok-linked-bankr-crypto-wallet-x-q-p-c-p
+- https://www.cryptotimes.io/2026/05/07/slowmist-labels-grok-ai-bankr-hack-a-permission-chain-attack/
+- https://startupfortune.com/someone-used-morse-code-to-trick-grok-into-sending-174000-and-it-has-happened-before/
+- https://neuraltrust.ai/blog/grok-morse-code
+- https://cryptopolitan.com/user-tricked-grok-bankrbot-to-send-tokens/
+- https://crypto-economy.com/ai-wallet-drained-as-hacker-uses-encoded-prompt/
+- https://ambcrypto.com/ai-linked-wallet-drained-via-prompt-injection-in-bankr-exploit/
+- https://tech.yahoo.com/cybersecurity/articles/ai-tricked-stealing-150-000-185125670.html
+- https://www.ainvest.com/news/ai-agent-exploit-drains-150-000-grok-wallet-prompt-injection-2605/
+
 **Date:** May 8, 2026
-**Outlet:** GBHackers / Cryptopolitan
+**Outlets:** GBHackers, Cryptopolitan, BeyondMachines, SlowMist, Startup Fortune, NeuralTrust, Crypto Economy, AMB Crypto, Yahoo Tech, AInvest
 
 ## Key Facts
 
