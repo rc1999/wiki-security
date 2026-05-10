@@ -32,25 +32,34 @@ Grok's wallet was **auto-provisioned by Bankr** — not by xAI. According to Ban
 
 **Critical vulnerability:** The wallet was created **without Grok's or xAI's explicit consent** as part of Bankr's design — any X handle that mentions @bankrbot gets a wallet automatically. The address is public, so anyone can inspect its holdings or send assets to it.^[raw/articles/bankrbot-morse-code-heist.md]
 
-### How the NFT Granted Admin Rights
+### How the NFT Functioned as a Permission Key
 
-The **Bankr Club Membership NFT** functioned as a **permission token** in Bankr's backend — not merely a collectible, but a gatekeeper for tool access:
+The **Bankr Club Membership NFT** was not a collectible — it was a **permission key** that BankrBot's backend checked before executing commands. Think of it like a physical key card: whoever holds it, gets the access.
 
-| Without NFT | With Bankr Club Membership NFT |
-|-------------|-------------------------------|
-| Limited or restricted agentic capabilities | Full "agentic toolset" unlocked |
-| Blocked from @bankrbot responses (post-March 2025) | Bypassed the Grok-specific restriction |
-| No autonomous transfer authority | Transfers, swaps, deploys, token launches enabled |
+**Without the NFT (default state):**
+- Wallet had **read-only** capabilities — check balances, view prices
+- **Blocked from executing** @bankrbot commands (post-March 2025 restriction)
+- Could **not** transfer, swap, or deploy tokens autonomously
 
-**The bypass mechanism:** Bankr had implemented a restriction in **March 2025** after a previous exploit drained ~$330,000 from the same Grok wallet. This restriction blocked all direct `@bankrbot` responses to `@grok`. However:
+**With the NFT (after attacker sent it):**
+- Full **"agentic toolset"** unlocked — transfers, swaps, deploys, token launches
+- **Bypassed** the March 2025 Grok-specific block entirely
+- BankrBot treated the wallet as **"verified"** and executed commands without hesitation
 
-> "The attacker found the gap in it: Bankrbot Club membership NFTs grant their holders direct access to the tool-calling suite, including swap and transfer capabilities. The attacker gifted one of those NFTs to Grok's wallet. Because the NFT sat in Grok's wallet, Grok now had a different path to the same tools that the direct-request restriction was designed to block. The prior safeguard was bypassed not by breaking it but by going around it."^[raw/articles/bankrbot-morse-code-heist.md]
+**Critical flaw: anyone could gift the key.** The attacker didn't hack, forge, or manipulate the NFT — they simply bought or acquired one and sent it to Grok's public wallet address. Because the wallet was public (auto-provisioned), the attacker could send assets to it just like any other blockchain address. Once the NFT sat in Grok's wallet, BankrBot's backend saw a "verified" account and obeyed commands.^[raw/articles/bankrbot-morse-code-heist.md]
 
-**Backend verification flow:**
-1. Bankr's scanner monitors X replies for command patterns
-2. When Grok tagged @bankrbot, scanner checked if the originating wallet held the membership NFT
-3. NFT confirmed → transaction signed and broadcast
-4. No human review, no secondary confirmation, no anomaly detection triggered^[raw/articles/bankrbot-morse-code-heist.md]
+**How the March 2025 restriction was bypassed:**
+
+Bankr had blocked all direct `@bankrbot` responses to `@grok` after the first exploit. But:
+
+> "The attacker found the gap: Bankrbot Club membership NFTs grant their holders direct access to the tool-calling suite. The attacker gifted one to Grok's wallet. Grok now had a different path to the same tools. The prior safeguard was bypassed **not by breaking it but by going around it**."^[raw/articles/bankrbot-morse-code-heist.md]
+
+**The backend verification was dead simple:**
+1. Attacker tweets Morse code at Grok
+2. Grok decodes it and tags `@bankrbot` with the plaintext command
+3. BankrBot's scanner sees the reply, checks: **"Does this wallet hold the Bankr Club Membership NFT?"**
+4. **Yes** (attacker gifted it) → command is "verified" → execute immediately
+5. **No human review, no amount check, no secondary confirmation**^[raw/articles/bankrbot-morse-code-heist.md]
 
 ### Prior Attack Context (March 2025)
 
